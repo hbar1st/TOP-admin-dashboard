@@ -27,6 +27,9 @@ body > div:first-child {
     padding: 1rem;
     font-weight: bold;
 
+    background-color: #9d174d;
+    color: #fff8e9;
+
     > label {
         font-size: 1.6rem;
     }
@@ -35,7 +38,6 @@ body > div:first-child {
         /* the ex is the height of the lowercase x which is about half the size of the capital letter */
         width: 2ex; 
         justify-self: center;
-        align-self: center;
     }
     img#logo {
         width: 5ex;
@@ -64,6 +66,44 @@ menu {
 }
 header {
     grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "search notifications"
+    "id btn-actions";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: fit-content fit-content;
+    justify-items: space-between;
+    padding: 1rem;
+
+    & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    div:first-child {
+        grid-area: search;
+    }
+
+    div:nth-child(2) {
+        grid-area: notifications;
+        justify-self: flex-end;
+    }
+
+    div:nth-child(3) {
+        grid-area: id;
+    }
+    div:last-child {
+        grid-area: btn-actions;
+        align-self: center;
+        justify-self: space-evenly;
+    }
+
+    img {
+        width: 3ex;
+    }
 }
 
 main {
