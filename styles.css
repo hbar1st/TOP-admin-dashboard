@@ -35,7 +35,7 @@ body>div:first-child {
     color: #fff8e9;
 
     >label {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         align-self: center;
     }
 
@@ -47,7 +47,7 @@ body>div:first-child {
     }
 
     img#logo {
-        width: 5ex;
+        width: 4ex;
     }
 }
 
@@ -60,7 +60,7 @@ menu {
     row-gap: 1rem;
 
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
     #spacer {
         margin-top: 2rem;
@@ -202,7 +202,7 @@ main {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+
         gap: 1rem;
     }
 
@@ -221,7 +221,7 @@ main {
 
 article {
     display: grid;
-    display:none;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
     align-items: center;
@@ -250,9 +250,9 @@ article {
 
         grid-row: 3 / 4;
 
-    img {
-        width: 2ex;
-    }
+        img {
+            width: 2ex;
+        }
     }
 }
 
