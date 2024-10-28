@@ -14,7 +14,6 @@ body {
     grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 4fr);
     grid-template-rows: 10rem calc(100vh - 10rem);
 
-    line-height: 1.8rem;
 }
 
 body>div:first-child {
@@ -176,7 +175,7 @@ input {
 
 main {
     grid-row: 2;
-    grid-column: 2 / 3;
+    grid-column: 2;
 
     display: grid;
     grid-template-columns: 75% 25%;
@@ -186,6 +185,7 @@ main {
     padding: 1rem .5rem 0 .5rem;
     background-color: hsl(336, 74%, 95%);
     border-top: 1px solid #9d174d;
+    outline: 1px solid #9d174d;
 
     h2,
     h3 {
