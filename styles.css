@@ -191,8 +191,8 @@ main {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 50% 50%;
-    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem 1rem;
     padding: 1rem 1rem 1rem .7rem;
 
     background-color: hsl(336, 74%, 95%);
@@ -229,7 +229,6 @@ main {
         grid-template-rows: 20px auto;
 
         gap: 1rem;
-        overflow-y: scroll;
 
         h3,
         div {
@@ -273,43 +272,44 @@ main {
         grid-template-rows: 20px auto;
 
         gap: 1rem;
-        overflow-y: scroll;
 
         h2 {
             font-size: 1.2rem;
         }
 
-        >article {
+        >div {
             grid-column: 1 / -1;
 
-            display: grid;
-            grid-template-columns: 6ex auto;
-            grid-template-rows: 1fr;
-            grid-auto-rows: 1fr;
-            justify-items: start;
-            align-items: center;
+            article {
+                display: grid;
+                grid-template-columns: 6ex auto;
+                grid-template-rows: 1fr;
+                grid-auto-rows: 1fr;
+                justify-items: start;
+                align-items: center;
 
-            font-size: 1rem;
+                font-size: 1rem;
 
-            background-color: white;
-            border-radius: 10px;
-            padding: 1rem;
-            gap: .5rem;
+                background-color: white;
+                border-radius: 10px;
+                padding: 1rem;
+                gap: .5rem;
 
-            p {
-                font-size: .9rem;
-            }
+                p {
+                    font-size: .9rem;
+                }
 
-            p:first-of-type {
-                font-weight: 500;
-            }
+                p:first-of-type {
+                    font-weight: 500;
+                }
 
-            img {
-                /* the ex is the height of the lowercase x which is about half the size of the capital letter */
+                img {
+                    /* the ex is the height of the lowercase x which is about half the size of the capital letter */
 
-                justify-self: center;
-                align-self: center;
-                aspect-ratio: 1;
+                    justify-self: center;
+                    align-self: center;
+                    aspect-ratio: 1;
+                }
             }
         }
     }
@@ -370,6 +370,21 @@ main>section:first-child>article {
 }
 */
 
+article {
+    background: linear-gradient(33deg, #fff8e9aa 0%, #f6ccdd 100%);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur;
+    transition: .5s all;
+}
+
+article:hover {
+    z-index: 2;
+    border: 1px solid #ffffff44;
+    box-shadow: 0 4px 10px 5px #9d174daa;
+    filter: brightness(1);
+    background: linear-gradient(260deg, #fff8e9aa 0%, #f6ccdd 100%);
+}
+
 .header button {
 
     padding: .5rem 1.3rem;
@@ -381,7 +396,14 @@ main>section:first-child>article {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: .9rem;
+    transition: .3s all;
 }
+
+button:hover {
+    filter: opacity(.8) brightness(1) drop-shadow(4px 4px 3px #9d174d20);
+
+}
+
 
 /*#region font styles */
 
