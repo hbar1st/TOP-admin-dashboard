@@ -384,8 +384,7 @@ article {
 
 article:hover {
     z-index: 2;
-    border: 1px solid #ffffff44;
-    box-shadow: 0 4px 10px 5px #9d174daa;
+    box-shadow: 1px 4px 5px 5px #9d174daa;
     filter: brightness(1);
     background: linear-gradient(260deg, #fff8e9aa 0%, #f6ccdd 100%);
 }
