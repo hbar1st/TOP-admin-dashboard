@@ -279,6 +279,13 @@ main {
 
         >div {
             grid-column: 1 / -1;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            display: grid;
+            gap: 1px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
 
             article {
                 display: grid;
@@ -292,7 +299,7 @@ main {
 
                 background-color: white;
                 border-radius: 10px;
-                padding: 1rem;
+                padding: .5rem;
                 gap: .5rem;
 
                 p {
@@ -371,10 +378,8 @@ main>section:first-child>article {
 */
 
 article {
-    background: linear-gradient(33deg, #fff8e9aa 0%, #f6ccdd 100%);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur;
-    transition: .5s all;
+    background: linear-gradient(33deg, #fff8e9aa 0%, #edd7a70a 100%);
+    transition: .5s linear;
 }
 
 article:hover {
@@ -401,7 +406,6 @@ article:hover {
 
 button:hover {
     filter: opacity(.8) brightness(1) drop-shadow(4px 4px 3px #9d174d20);
-
 }
 
 
