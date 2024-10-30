@@ -383,6 +383,7 @@ article {
 }
 
 article:hover {
+    box-sizing: content-box;
     z-index: 2;
     box-shadow: 1px 4px 5px 5px #9d174daa;
     filter: brightness(1);
